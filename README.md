@@ -20,9 +20,6 @@ This project is currently in its **initial setup phase**, with folder structure,
 
 The app follows a modern full-stack architecture, with separate folders for frontend and backend:
 
-<pre> focus-timer-app/ ├── frontend/ # React + TypeScript client │ ├── public/ # Static assets │ └── src/ # App source code │ ├── components/ # Reusable UI components (Timer, Charts, etc.) │ ├── pages/ # Route-level pages (Home, Dashboard, Settings) │ ├── hooks/ # Custom React hooks (e.g., useTimer, useSessions) │ ├── types/ # TypeScript types and interfaces │ ├── App.tsx # Main app component │ ├── main.tsx # React entry point │ └── index.css # Global styles │ ├── .env # Frontend environment variables │ ├── package.json # Frontend dependencies and scripts │ ├── tsconfig.json # TypeScript configuration │ └── vite.config.ts # Vite bundler configuration │ ├── backend/ # FastAPI + PostgreSQL server │ ├── app/ │ │ ├── __init__.py │ │ ├── main.py # FastAPI entry point │ │ ├── models.py # SQLAlchemy models │ │ ├── schemas.py # Pydantic schemas │ │ ├── crud.py # Database operations │ │ ├── database.py # DB engine and session maker │ │ └── routes/ │ │ └── session_routes.py # API endpoints for sessions │ ├── .env # Backend environment variables (DB URL, etc.) │ ├── requirements.txt # Python dependencies │ └── alembic/ # Optional: DB migration scripts │ ├── docker-compose.yml # Optional: Local dev orchestration ├── README.md └── .gitignore </pre>
-
-
 ### Frontend
 - **React** + **TypeScript**
 - **Tailwind CSS** for styling
@@ -54,16 +51,6 @@ The app follows a modern full-stack architecture, with separate folders for fron
 
 ---
 
-## 🚧 Project Status
-
-- [x] Project planning and folder structure defined
-- [ ] Backend setup with FastAPI and database schema
-- [ ] React frontend bootstrapping with timer UI
-- [ ] REST API integration between frontend and backend
-- [ ] Analytics page with visual insights
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License**.
@@ -72,4 +59,4 @@ This project is licensed under the **MIT License**.
 
 ## ✨ Author
 
-Created by [Your Name Here] – built with a focus on productivity, performance, and clean design.
+Created by Kishan Yerneni and Yash Patel – built with a focus on productivity, performance, and clean design.
