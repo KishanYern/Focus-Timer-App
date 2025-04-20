@@ -20,39 +20,7 @@ This project is currently in its **initial setup phase**, with folder structure,
 
 The app follows a modern full-stack architecture, with separate folders for frontend and backend:
 
-focus-timer-app/
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── hooks/
-│       ├── types/
-│       ├── App.tsx
-│       ├── main.tsx
-│       └── index.css
-│   ├── .env
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── vite.config.ts
-│
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── schemas.py
-│   │   ├── crud.py
-│   │   ├── database.py
-│   │   └── routes/
-│   │       └── session_routes.py
-│   ├── .env
-│   ├── requirements.txt
-│   └── alembic/              # optional: migrations folder
-│
-├── docker-compose.yml        # optional: for local dev
-├── README.md
-└── .gitignore
+<pre> focus-timer-app/ ├── frontend/ # React + TypeScript client │ ├── public/ # Static assets │ └── src/ # App source code │ ├── components/ # Reusable UI components (Timer, Charts, etc.) │ ├── pages/ # Route-level pages (Home, Dashboard, Settings) │ ├── hooks/ # Custom React hooks (e.g., useTimer, useSessions) │ ├── types/ # TypeScript types and interfaces │ ├── App.tsx # Main app component │ ├── main.tsx # React entry point │ └── index.css # Global styles │ ├── .env # Frontend environment variables │ ├── package.json # Frontend dependencies and scripts │ ├── tsconfig.json # TypeScript configuration │ └── vite.config.ts # Vite bundler configuration │ ├── backend/ # FastAPI + PostgreSQL server │ ├── app/ │ │ ├── __init__.py │ │ ├── main.py # FastAPI entry point │ │ ├── models.py # SQLAlchemy models │ │ ├── schemas.py # Pydantic schemas │ │ ├── crud.py # Database operations │ │ ├── database.py # DB engine and session maker │ │ └── routes/ │ │ └── session_routes.py # API endpoints for sessions │ ├── .env # Backend environment variables (DB URL, etc.) │ ├── requirements.txt # Python dependencies │ └── alembic/ # Optional: DB migration scripts │ ├── docker-compose.yml # Optional: Local dev orchestration ├── README.md └── .gitignore </pre>
 
 
 ### Frontend
