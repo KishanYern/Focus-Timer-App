@@ -1,15 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+import Login from './pages/Login';
+import Register from './pages/Register';
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <div className=''>
-        <button className=" bg-black text-green-300 px-4 py-2 rounded hover:bg-primary/80 transition">
-            Start Focus
-        </button>
-      </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
